@@ -45,8 +45,22 @@ public class ArithmeticTest { // Save as "ArithmeticTest.java"
     System.out.print(number1);
     System.out.print(" and " + number2);
     System.out.println(" is " + quotient);
+
+    // Combining Lines 20-33 into one single println() statement, using '+' to concatenate all the items together
+    System.out.print("The sum, difference, product, quotient and remainder of " 
+    + number1 
+    + " and " 
+    + number2 
+    + " are " 
+    + sum 
+    + ", "
+    + difference
+    + ", "
+    + ", "
+    + quotient
+    + ", and "
+    + remainder);
   }
-  
 }
 
 

@@ -12,7 +12,7 @@ public class RunningNumberOddSum {
     int sum = 0;
 
     int number = LOWERBOUND;
-    while (number<=1000){
+    while (number <= UPPERBOUND){
       sum = sum + number;
       number = number + 2;
     }

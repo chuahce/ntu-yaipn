@@ -11,7 +11,7 @@ public class RunningNumberSquareSum {
     int sum = 0;
 
     int number = LOWERBOUND;
-    while (number<=100){
+    while (number <= UPPERBOUND){
       sum = sum + (number * number);
       ++number;
     }

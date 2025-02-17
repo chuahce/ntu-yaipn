@@ -11,7 +11,7 @@ public class RunningNumberProduct {
     int product = 1;
 
     int number = 1;
-    while (number<=10){
+    while (number <= UPPERBOUND){
       product = product * number;
       ++number;
     }

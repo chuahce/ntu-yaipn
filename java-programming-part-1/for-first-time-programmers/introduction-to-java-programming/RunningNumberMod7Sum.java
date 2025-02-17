@@ -11,7 +11,7 @@ public class RunningNumberMod7Sum {
     int sum = 0;
 
     int number = 7;
-    while (number<=1000){
+    while (number <= UPPERBOUND){
       sum = sum + number;
       number = number + 7;
     }

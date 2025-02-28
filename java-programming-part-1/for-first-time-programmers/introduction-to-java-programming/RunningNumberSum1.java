@@ -12,7 +12,7 @@ public class RunningNumberSum1 {
                  // Set the initial sum to 0
     // Use a while-loop to repeatedly sum from the lowerbound to the upperbound
     int number = LOWERBOUND;
-    while (number<=899){
+    while (number <= UPPERBOUND){
       sum = sum + number; // Accumulate number into sum
       ++number;           // increment number
     }

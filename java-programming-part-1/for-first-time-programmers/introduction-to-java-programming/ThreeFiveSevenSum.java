@@ -11,7 +11,7 @@ public class ThreeFiveSevenSum {
   int sum = 0;
 
   int number = LOWERBOUND;
-  while (number <= 1000){
+  while (number <= UPPERBOUND){
     if ((number % 3 == 0 || number % 5 == 0 || number % 7 == 0) && (!(number % 15 == 0 ||number % 21 == 0 || number % 35 == 0 || number % 105 == 0)))
     sum += number;
     ++number;

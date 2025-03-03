@@ -222,7 +222,71 @@ boolean hasTuitionGrant;
 boolean isScholar;
 String studentId;         // Use String if the 8-digit id may include leading zeros; otherwise, consider int or long
 
+Literals for Primitive Types and String
+/* Integer (int, long, short, byte) literals */
+int number = -123;
+int sum = 1234567890;     // This value is within the range of int
+int bigSum = 8234567890;  // error: this value is outside the range of int
+int intRate = 6%;         // error: no percent sign
+int pay = $1234;          // error: no dollar sign
 
+int number1 = 1234;   // The usual decimal
+int number2 = 01234;  // Octal 1234, Decimal 2322
+int number3 = 0017;   // Octal 17, Decimal 15
+int number4 = 0x1abc; // Hexadecimal 1ABC, decimal 15274
+
+// JDK 7
+int number1 = 0b01010000101000101101000010100010;
+int number2 = 0b0101_0000_1010_0010_1101_0000_1010_0010;  // break the bits with underscore
+int number3 = 2_123_456;  // break the decimal digits with underscore
+int number4 = _123_456;   // error: cannot begin or end with underscore
+
+long sum = 123;                // Within the "int" range, no need for suffix 'L'
+long bigSum = 1234567890123L;  // Outside "int" range, suffix 'L' needed
+
+byte smallNumber1 = 123;        // This is within the range of byte [-128, 127]
+byte smallNumber2 = -1234;      // error: this value is out of range
+
+short midSizeNumber1 = -12345;  // This is within the range of short [-32768, 32767]
+short midSizeNumber2 = 123456;  // error: this value is out of range
+
+/* Floating-point (double, float) literals */
+float average = 55.66;    // error: RHS is a double. Need suffix 'f' for float.
+float average = 55.66F;   // float literal needs suffix 'f' or 'F'
+
+float rate = 1.2e-3;    // error: RHS is a double. Need suffix 'f' for float.
+float rate = 1.2e-3f;   // float literal needs suffix 'f' or 'F'
+
+/* Character (char) Literals and Escape Sequences */
+char letter = 'a';                 // Same as 97
+char anotherLetter = 98;           // Same as the letter 'b'
+                                   // You can assign an integer in the range of [0, 65535] to char
+System.out.println(letter);        // 'a' printed
+System.out.println(anotherLetter); // 'b' printed instead of the number, because the type is char
+anotherLetter += 2;                // 100 or 'd'
+System.out.println(anotherLetter); // 'd' printed
+
+char tabChar = '\t';          // tab
+char anotherTabChar = 9;      // Code number 9 is tab
+char newlineChar = '\n';      // newline, code number 10
+char backSlashChar = '\\';    // Since back-slash is given a special meaning,
+                              // to write a back-slash, use double back-slash
+char singleQuoteChar = '\'';  // Need to use escape sequence to resolve conflict
+char doubleQuoteChar = '"';   // No conflict. No need for escape sequence
+System.out.println("A tab " + tabChar + " before this; end with two newlines!" + newlineChar + newlineChar);
+
+/* String Literals and Escape Sequences */
+String directionMsg = "Turn Right";
+String greetingMsg = "Hello";
+String statusMsg = "";        // An empty string
+
+String str1 = "hello\tworld\n";    // tab and newline
+String str2 = "a double quoted \"hello\"";
+String str3 = "1 back-slash \\, another 2 back-slashes \\\\";
+String str1 = "A \"string\" nested \\inside\\ a string"   // A "string" nested \inside\ a string
+String str2 = "Hello, \u60a8\u597d!"   // "Hello, 您好!"
+
+String str3 = "Hi, I'm a string!"      // Single quote OK
 
 
 

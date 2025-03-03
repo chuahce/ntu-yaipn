@@ -28,4 +28,3 @@ msg = "Hello"; // Assign a double-quoted text string to the String variable.
 int number; // ERROR: The variable named "number" has already been declared.
 sum = 55.66; // ERROR: The variable "sum" is an int. It cannot be assigned a double.
 sum = "Hello"; // ERROR: The variable "sum" is an int. It cannot be assigned a string.
- 

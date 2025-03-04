@@ -3,7 +3,7 @@
  */
 
 public class PrimitiveMinMaxBitLen {
-  public static void main (String[] Args){
+  public static void main (String[] args){
     /* int (32-bit signed integer) */
     System.out.println("int(min) = " + Integer.MIN_VALUE);
     //int(min) = -2147483648

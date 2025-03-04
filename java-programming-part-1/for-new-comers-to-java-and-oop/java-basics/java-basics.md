@@ -288,6 +288,15 @@ String str2 = "Hello, \u60a8\u597d!"   // "Hello, 您好!"
 
 String str3 = "Hi, I'm a string!"      // Single quote OK
 
+/* var - Local Variable Type Inference (JDK 10) */
+var v1 = 0;        // type inferred to "int"
+var v2 = 0.0;      // type inferred to "double"
+var v3 = 1.0f;     // type inferred to "float"
+var v4 = '0';      // type inferred to "char"
+var v5 = "hello";  // type inferred to "String"
+//var v6;          //compilation error: cannot use 'var' on variable without initializer
+
+
 
 
 

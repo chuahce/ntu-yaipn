@@ -3,7 +3,7 @@
  */
 
 public class OddEvenSum {
-  public static void main(String[] Args){
+  public static void main(String[] args){
     // Declare variables
     final int LOWERBOUND = 1;
     final int UPPERBOUND = 1000; // Define the bounds

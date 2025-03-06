@@ -298,6 +298,47 @@ var v5 = "hello";  // type inferred to "String"
 
 
 /* Basic Operations */
+int number = -9;
+number = -number; // Unary negate
+
+byte b1 = 5, b2 = 9, b3;
+// byte + byte -> int + int -> int
+b3 = b1 + b2;           // error: RHS is "int", cannot assign to LHS of "byte"
+b3 = (byte)(b1 + b2);   // Need explicit type casting (to be discussed later)
+
+byte b1 = 5, b2 = 9;
+b2 += b1;     // Result in "int", but automatically converted back to "byte"
+
+/* Conditional Flow Control */
+/* if-then and if-then-else */
+
+// if-then
+int absValue = -5;
+if (absValue < 0) absValue = -absValue;   // Only one statement in the block, can omit { }
+ 
+int min = 0, value = -5;
+if (value < min) {     // More than one statements in the block, need { }
+   min = value;
+   System.out.println("Found new min");
+}
+ 
+// if-then-else
+int mark = 50;
+if (mark >= 50) 
+   System.out.println("PASS");   // Only one statement in the block, can omit { }
+else {                           // More than one statements in the block, need { }
+   System.out.println("FAIL");
+   System.out.println("Try Harder!");
+}
+
+// Harder to read without the braces
+int number1 = 8, number2 = 9, absDiff;
+if (number1 > number2) absDiff = number1 - number2;
+else absDiff = number2 - number1;
+
+/* Dangling-else Problem */
+
+
 
 
 

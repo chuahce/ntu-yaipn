@@ -1,7 +1,6 @@
 /* 
  * Test char literals for integers and escape sequences
  */
-
 public class CharLiteralTest {
   public static void main(String[] args) { 
 

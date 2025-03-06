@@ -1,7 +1,6 @@
 /* *
  * Test literals for various primitive types
  */
-
 public class LiteralTest {
   public static void main(String[] args){
     String name = "Tan Ah Teck";  // String is double-quoted

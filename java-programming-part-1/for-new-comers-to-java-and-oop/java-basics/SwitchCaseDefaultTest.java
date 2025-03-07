@@ -58,3 +58,7 @@ public class SwitchCaseDefaultTest {
     }
   }
 }
+
+/*
+* Try to visualize and draw the flow chart of switch-case-default
+*/

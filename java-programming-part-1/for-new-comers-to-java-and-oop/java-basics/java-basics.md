@@ -338,9 +338,66 @@ else absDiff = number2 - number1;
 
 /* Dangling-else Problem */
 
+/* Using boolean Flag for Loop Control */
+// Game loop
+boolean gameOver = false;
+while (!gameOver) {
+   // play the game
+   ......
+   // Update the game state 
+   // Set gameOver to true if appropriate to exit the game loop
+   if ( ...... ) {
+      gameOver = true;    // exit the loop upon the next iteration test
+   }
+}
 
+/*
+Example: Suppose that your program prompts user for a number between 1 to 10, and checks for valid input. A do-while loop with a boolean flag could be more appropriate as it prompts for input at least once, and repeat again and again if the input is invalid.
+*/
 
+// Input with validity check
+boolean isValid = false;
+int number;
+do {
+  // prompt user to enter an int between 1 and 10
+  ......
+  // if the number entered is valid, set done to exit the loop
+  if (number >= 1 && number <= 10) {
+     isValid = true;    // exit the loop upon the next iteration test
+     // Do the operations
+     ......
+  } else {
+     // Print error message and repeat (isValid remains false)
+     ......
+  }
+} while (!isValid);     // Repeat for invalid input
 
+/* for-loop with Comma Separator */
+// for (init; test; update) { ...... }
+for (int row = 0, col = 0; row < SIZE; ++row, ++col) {
+   // Process diagonal elements (0,0), (1,1), (2,2),... 
+   ......
+}
 
+/* Terminating Program */
+/*
+System.exit(int exitCode): You could invoke the method System.exit(int exitCode) to terminate the program and return the control to the Java Runtime. By convention, return code of zero indicates normal termination; while a non-zero exitCode indicates abnormal termination. For example,
+*/
 
+if (errorCount > 10) {
+   System.out.println("too many errors");
+   System.exit(1);  // Terminate the program with abnormal exit code of 1
+}
+
+/*The return statement: You could also use a "return" statement in the main() method to terminate the main() and return control back to the Java Runtime. For example,
+*/
+
+public static void main(String[] args) {
+   ...
+   if (errorCount > 10) {
+      System.out.println("too many errors");
+      return;  // Terminate and return control to Java Runtime from main()
+   }
+   ...
+}
 

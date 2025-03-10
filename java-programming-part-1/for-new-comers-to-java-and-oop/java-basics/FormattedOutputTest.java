@@ -4,7 +4,7 @@
  */
 
 public class FormattedOutputTest {
-  public static void main() {
+  public static void main(String[] args) {
     // Without specifying field-width
     System.out.printf("Hi,|%s|%d|%f|,@xyz%n", "Hello", 123, 45.6);
     // Specifying the field-width and decimal places for double

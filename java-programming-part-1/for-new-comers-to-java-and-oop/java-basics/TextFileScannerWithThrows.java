@@ -1,4 +1,4 @@
-/* 
+/*
  * Input from File.
  * Technique 1: Declare "throws FileNotFoundException" in the enclosing main() method
  */

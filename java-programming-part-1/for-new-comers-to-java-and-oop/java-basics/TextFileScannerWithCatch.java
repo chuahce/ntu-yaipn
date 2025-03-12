@@ -1,6 +1,6 @@
 /**
  * Input from File.
- * Technique 2: Use try-catch to handle exception
+ * Technique 2: Use try-catch to handle exception.
  */
 import java.util.Scanner;               // Needed for using Scanner
 import java.io.File;                    // Needed for file operation

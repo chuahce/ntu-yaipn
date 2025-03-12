@@ -18,7 +18,7 @@ public class IncomeTaxCalculator {
 
     // Prompt and read input as "int"
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter the taxable income: $");
+    System.out.print("Enter the taxable income: $");
     taxableIncome = in.nextInt();
     in.close();
 
@@ -49,6 +49,6 @@ public class IncomeTaxCalculator {
     //}
 
     // Print result rounded to 2 decimal places
-    System.out.printf("The income tax payable is: %.2f%n", taxPayable);
+    System.out.printf("The income tax payable is: $%.2f%n", taxPayable);
     }
 }

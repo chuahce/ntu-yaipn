@@ -66,3 +66,19 @@ public class IncomeTaxCalculatorSentinel {
     in.close(); // Close scanner
   }
 }
+
+/* 
+Notes:
+
+The coding pattern for handling input with sentinel (terminating) value is as follows:
+// Get first input to "seed" the while loop
+input = ......;
+while (input != SENTINEL) {
+    // Process input
+    ......
+    ......
+    // Get next input and repeat the loop
+    input = ......;    // Need to repeat these statements
+}
+......
+*/

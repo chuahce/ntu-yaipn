@@ -401,3 +401,23 @@ public static void main(String[] args) {
    ...
 }
 
+/* java.io.Console */
+/* Java SE 6 introduced a new java.io.Console class to simplify character-based input/output to/from the system console. BUT, the Console class does not run under IDE (such as Eclipse/NetBeans)!!!
+*/
+Console con = System.console();
+
+String inLine = con.readLine();
+String msg = con.readLine("Enter your message: ");       // readLine with prompting message
+String msg = con.readLine("%s, enter message: ", name);  // Prompting message with format specifier
+
+Scanner in = new Scanner(con.reader());      // Use Scanner to scan the Console
+// Use the Scanner's methods such as nextInt(), nextDouble() to parse primitives
+int anInt = in.nextInt();
+double aDouble = in.nextDouble();
+String str = in.next();
+String line = in.nextLine();
+
+
+
+
+

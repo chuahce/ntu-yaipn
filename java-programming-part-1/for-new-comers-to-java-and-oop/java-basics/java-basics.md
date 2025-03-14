@@ -417,6 +417,39 @@ double aDouble = in.nextDouble();
 String str = in.next();
 String line = in.nextLine();
 
+/* Arrays */
+int[] marks;   // Declare an int array named "marks"
+               // "marks" is assigned to a special value called "null" before allocation
+int marks[];   // Same as above, but the above syntax recommended
+marks = new int[5];  // Allocate 5 elements via the "new" operator
+// Declare and allocate 20-element array in one statement via "new" operator
+int[] factors = new int[20];
+// Declare, allocate a 6-element array thru initialization 
+int[] numbers = {11, 22, 33, 44, 55, 66}; // size of array deduced from the number of items
+
+/* Array Index */
+int[] marks = new int[5];  // Declare & allocate a 5-element int array
+// Assign values to the elements
+marks[0] = 95;
+marks[1] = 85;
+marks[2] = 77;
+marks[3] = 69;
+marks[4] = 66;
+// Retrieve elements of the array
+System.out.println(marks[0]);
+System.out.println(marks[3] + marks[4]);
+
+/* Array's length */
+int[] factors = new int[5];      // Declare and allocate a 5-element int array
+int numFactors = factors.length; // numFactor is 5
+
+
+
+
+
+
+
+
 
 
 
